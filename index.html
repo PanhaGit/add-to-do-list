@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add to do list</title>
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end Font -->
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- end Icon -->
+  </head>
+  <body>
+    <div class="to_do_list">
+      <h1>Dynamic Todo List App JavaScript</h1>
+      <!-- form -->
+      <form id="form">
+        <div class="add_to_do">
+          <input
+            type="text"
+            placeholder="Enter your new task..."
+            id="InputAddToDo"
+          />
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+        </div>
+        <input type="submit" value="Add" />
+      </form>
+      <!-- end form -->
+      <!-- list -->
+      <ul id="list_ul">
+        <!-- <li onclick="handleLineThrough()">sdfsdfs</li> -->
+      </ul>
+      <!-- end list -->
+      <div class="task_summary">
+        <h3 id="pending">You have 0 pending tasks</h3>
+        <button class="clear_all_list" id="btnClearAll">Clear All</button>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
